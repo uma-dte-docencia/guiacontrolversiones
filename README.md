@@ -28,6 +28,7 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 * Identificar el estado de un fichero o ficheros en un repositorio local.
 
 ### En control de versiones centralizado
+* Configurar git para que trabaje tras un proxy
 * Replicar un repositorio remoto localmente en nuestra máquina.
 * Repolicar un repositorio local en un servidor remoto.  
 * Traer los cambios de un repositorio remoto a un repositorio local. 
