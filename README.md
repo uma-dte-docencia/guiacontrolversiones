@@ -24,7 +24,7 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 * Preparar ficheros para ser confirmados en un repositorio local.
 * Confirmar cambios en un repositorio local. 
 * Deshacer las operaciones de preparar y confirmar
-* Identificar los cambios a un fichero o ficheros en un repositorio local.
+* Identificar el estado de un fichero o ficheros en un repositorio local.
 
 ### En control de versiones centralizado
 * Replicar un repositorio remoto localmente en nuestra máquina.
