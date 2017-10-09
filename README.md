@@ -20,9 +20,11 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 * Identificar los cambios a un fichero o ficheros en un repositorio local.
 
 ### En control de versiones centralizado
-* Replicar un repositorio local en nuestra máquina. 
+* Replicar un repositorio remoto localmente en nuestra máquina.
+* Repolicar un repositorio local en un servidor remoto.  
 * Traer los cambios de un repositorio remoto a un repositorio local. 
-* Enviar los cambios de un repositorio local a uno remoto
+* Resolver los conflictos que se puedan producir al traerse estos cambios. 
+* Enviar los cambios de un repositorio local a uno remoto. 
 
 ### En control de versiones distribuido
 * Crear una rama en un repositorio local
