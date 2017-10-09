@@ -13,8 +13,9 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 ## Qué tenemos que saber hacer con Git (y GitHub)
 
 ### En el intérprete de comandos de git-bash
-* Mostrar en qué directorio estamos
-* Cambiar de directorio
+* Mostrar en qué directorio estamos.
+* Crear un directorio.
+* Cambiar de directorio.
 * Mostrar la lista de ficheros de un directorio. 
 * Borrar un fichero. 
 * Cambiar (mover) un fichero de directorio. 
@@ -23,7 +24,7 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 * Crear un repositorio local en nuestra máquina. 
 * Preparar ficheros para ser confirmados en un repositorio local.
 * Confirmar cambios en un repositorio local. 
-* Deshacer las operaciones de preparar y confirmar
+* Deshacer las operaciones de preparar y confirmar.
 * Identificar el estado de un fichero o ficheros en un repositorio local.
 
 ### En control de versiones centralizado
@@ -34,8 +35,8 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 * Enviar los cambios de un repositorio local a uno remoto.  
 
 ### En control de versiones distribuido
-* Crear una rama en un repositorio local
-* Cambiar de rama en la copia local
+* Crear una rama en un repositorio local.
+* Cambiar de rama en la copia local.
 * Enviar la rama al repositorio remoto.
 * Realizar un pull request entre dos ramas de un repositorio remoto. 
 * Realizar un pull request entre dos repositorios que resultaron de un Fork.  
