@@ -4,11 +4,12 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 
 ## Conceptos mínimos que tenemos que saber sobre el control de versiones
 * Definir brevemente en qué consiste el control de versiones. 
-* Explicar los siguientes conceptos: repositorio local, copia local, repositorio remoto, *log*, conflicto. 
+* Explicar los siguientes conceptos: repositorio local, copia local, repositorio remoto, *log*, conflicto.
+* Explicar los siguientes estados de un fichero: sin seguimiento, confirmado, modificado, preparado, ignorado. 
 * Explicar las siguientes operaciones: Clone, Add, Commit, Push, Pull, Fork y Pull Request. 
+* Traducir entre inglés y español la terminología de los tres puntos anteriores. 
 * Nombrar al menos dos servicios de repositorio remoto para el control de versiones. 
 * Nombrar al menos un cliente gráfico (GUI) para el control de versiones. 
-* Explicar las siguientes operaciones
 
 ## Qué tenemos que saber hacer con Git (y GitHub)
 
@@ -24,8 +25,10 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 * Crear un repositorio local en nuestra máquina. 
 * Preparar ficheros para ser confirmados en un repositorio local.
 * Confirmar cambios en un repositorio local. 
-* Deshacer las operaciones de preparar y confirmar.
+* Deshacer la operación de preparar. 
+* Deshacer la operación de confirmar.
 * Identificar el estado de un fichero o ficheros en un repositorio local.
+* Descartar los cambios de un fichero de trabajo mediante la recuperación de una versión almacendada en el repositorio local.
 
 ### En control de versiones centralizado
 * Configurar git para que trabaje tras un proxy
@@ -39,5 +42,6 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 * Crear una rama en un repositorio local.
 * Cambiar de rama en la copia local.
 * Enviar la rama al repositorio remoto.
+* Incorporar a ramas locales cambios que se producen en el repositorio remoto.  
 * Realizar un pull request entre dos ramas de un repositorio remoto. 
 * Realizar un pull request entre dos repositorios que resultaron de un Fork.  
