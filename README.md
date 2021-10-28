@@ -29,6 +29,8 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 * Deshacer la operación de confirmar.
 * Identificar el estado de un fichero o ficheros en un repositorio local.
 * Descartar los cambios de un fichero de trabajo mediante la recuperación de una versión almacendada en el repositorio local.
+* Crear una rama en un repositorio local.
+* Cambiar de rama en la copia local.
 
 ### En control de versiones centralizado
 * Configurar git para que trabaje tras un proxy
@@ -37,11 +39,10 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 * Traer los cambios de un repositorio remoto a un repositorio local. 
 * Resolver los conflictos que se puedan producir al traerse estos cambios. 
 * Enviar los cambios de un repositorio local a uno remoto.  
-
-### En control de versiones distribuido
-* Crear una rama en un repositorio local.
-* Cambiar de rama en la copia local.
-* Enviar la rama al repositorio remoto.
+* Enviar una rama local al repositorio remoto.
 * Incorporar a ramas locales cambios que se producen en el repositorio remoto.  
 * Realizar un pull request entre dos ramas de un repositorio remoto. 
+
+### En control de versiones distribuido
+
 * Realizar un pull request entre dos repositorios que resultaron de un Fork.  
