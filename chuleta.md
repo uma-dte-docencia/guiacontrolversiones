@@ -1,2 +1,2 @@
 ### Chuleta de control de versiones con git
-Solo estoy haciendo pruebas un abracito 
+Un saludo de vuestro lider todo poderoso <3
