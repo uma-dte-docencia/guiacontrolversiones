@@ -1,4 +1,4 @@
-#Resumen general de comandos GITHUB
+# Resumen general de comandos GITHUB
 
 ## Configuración Básica
 
