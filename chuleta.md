@@ -1,6 +1,6 @@
 ### Chuleta de control de versiones con git
 
-###Título: 'El intérprete de comandos de git-bash' 
+TÍTULO: 'El intérprete de comandos de git-bash' 
 
 Mostrar en qué directorio estamos
 
