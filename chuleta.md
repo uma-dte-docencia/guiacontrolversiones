@@ -26,3 +26,10 @@ Borrar un fichero
 Cambiar (mover) un fichero de directorio
 
 -Usando el comando "mv (nombre del archivo) (nombre o ruta del directorio)" podemos mover cualquier fichero de directorio
+
+
+TÍTULO: Control de versiones distribuido
+
+Realizar un pull request entre dos repositorios que resultaron de un Fork
+
+-Una vez tengamos en nuestro repositorio los repositorios generados con el Fork, 
