@@ -1,0 +1,13 @@
+5) Hacer git clone para trabajar localmente en la chuleta
+6) Se hacen su rama cada vez que quieran añadir algo
+--> Rama con nombre de cada uno
+--> Rama con nombre de "tema" p.ej.: "bash"
+7) push, pullrequest en GITHUB, merge
+
+LUIS: un par de días antes del examen imprime chuleta.md de la RAMA MASTER de cada fork
+
+Primero me clono MI repositorio, una vez ahí, me creo mi rama, me cambio a mi rama, hago los cambios que quiera hacer, y luego hago git push --set-upstream origin fran y ya me crea mi rama en el top para poder modificar la informacion, por último hago los cambios en la rama master.
+
+Despues de hacer un git add, si usas un git reset te lo deshace, se puede usar también para deshacer un commit pero tienes que pasarle parámetros
+
+Si por ejemplo estoy haciendo pruebas con un código (en mi rama) pero el código no funciona, sit hacemos git merge master, da error porque se pierde lo que hayas hecho en tu rama, ponemos el comando git stash, donde se hace como una especie de repositorio aparte. Despues hacemos un git merge master, se lo trae a su rama y haciendo git stash apply ya sigue trabajando con su mesa actualizada. 
