@@ -25,4 +25,4 @@ Borrar un fichero
 
 Cambiar (mover) un fichero de directorio
 
--Usando el comando "mv (nombre del archivo) (nombre o ruta del directorio)" podemos mover cualquier fichero de directorio.
+-Usando el comando "mv (nombre del archivo) (nombre o ruta del directorio)" podemos mover cualquier fichero de directorio
