@@ -32,4 +32,4 @@ TÍTULO: Control de versiones distribuido
 
 Realizar un pull request entre dos repositorios que resultaron de un Fork
 
--Cuando tengamos los repositorios generados con el Fork, es necesario para esto que hayamos hecho cambios en las ramas: vamos a github, entramos en el repositorio->code->branch->pull request
+-Cuando obtengamos los repositorios generados con el Fork, es necesario para esto que hayamos hecho cambios en las ramas: vamos a github, entramos en el repositorio->code->branch->pull request
