@@ -17,9 +17,7 @@ servidor de proxy y 'puerto' en el que está escuchando el proxy.
 Si queremos deshabilitar el uso del proxy usamos:
 
 `git config --global --unset http.proxy`
- 
 ___
- 
 2. **Replicar un repositorio remoto localmente en nuestra máquina.**
 
 Para obtener una copia de un repositorio Git existente el comando que se necesita es `git clone [url]` . Por ejemplo, si quieres clonar la librería de Git llamada libgit2 puedes hacer algo así: `$ git clone https://github.com/libgit2/libgit2` .
@@ -57,9 +55,7 @@ From https://github.com/paulboone/ticgit
 ```
 
 La rama maestra de Paul ahora es accesible localmente con el nombre `pb/master` - puedes combinarla con alguna de tus ramas, o puedes crear una rama local en ese punto si quieres inspeccionarla.
-
-
-
+___
 3. **Replicar un repositorio local en un servidor remoto.**
 
 Cuando tienes un proyecto que quieres compartir, debes enviarlo a un servidor. El comando para hacerlo es simple: `git push [nombre-remoto] [nombre-rama]`. Si quieres enviar tu rama `master` a tu servidor `origin`
@@ -69,8 +65,7 @@ enviarán todos los *commits* que hayas hecho al servidor:
 `$ git push origin master`
 
 Este comando solo funciona si clonaste de un servidor sobre el que  tienes permisos de escritura y si nadie más ha enviado datos por el  medio. Si alguien más clona el mismo repositorio que tú y envía información antes que tú, tu envío será rechazado. Tendrás que traerte su trabajo y combinarlo con el tuyo antes de que puedas enviar datos al servidor.
-
-
+___
 4. **Traer los cambios de un repositorio remoto a un repositorio local.**
 
 Para obtener datos de tus proyectos remotos puedes ejecutar: `$ git fetch [remote-name]`
@@ -82,8 +77,7 @@ Es importante destacar que el comando `git fetch` solo trae datos a tu repositor
 (ni lo combina automáticamente con tu trabajo ni modifica el trabajo que llevas hecho), la combinación con tu trabajo debes hacerla manualmente.
 
 Si has configurado una rama para que rastree una rama remota, puedes usar el comando `git pull` para traer y combinar automáticamente la rama remota con tu rama actual. Por defecto, el comando `git clone` le indica automáticamente a tu rama maestra local que rastree la rama maestra remota (o como se llame la rama por defecto) del servidor del que has clonado. Generalmente, al ejecutar `git pull` traerás datos del servidor del que clonaste originalmente y se intentará combinar automáticamente la información con el código en el que estás trabajando: es básicamente una combinación de los comandos `git fetch` y `git merge`, donde Git descargará desde el repositorio remoto especificado y, a continuación, de forma inmediata intentará combinarlo en la rama en la que te encuentres.
-
-
+___
 5. **Resolver los conflictos que se puedan producir al traerse estos cambios**.
 
 Es común que los sistemas de control de versiones gestionen las contribuciones de varios autores. A veces, varios desarrolladores pueden intentar editar el mismo contenido: si el desarrollador A intenta editar el código que el desarrollador B está editando, puede producir un conflicto**.** Para disminuir la aparición de conflictos, los desarrolladores deben trabajar en ramas separadas y aisladas. ****El comando `git merge` tiene como responsabilidad principal combinar ramas separadas y resolver cualquier edición en conflicto.
@@ -104,15 +98,13 @@ El archivo se mostrará tal que así:
 ![Untitled](Git%20d2395b8688ee4f0180604699e79ff39b/Untitled.webp)
 
 La forma más directa de resolver un conflicto es editar el archivo generado: hay que abrir el archivo afectado y eliminar manualmente todos los divisores de conflicto (en el ejemplo, elegir el código que nos interese que esté entre `<<<<<<< HEAD` y `=======` o `======` y `>>>>>>> contenido`)**.** Una vez que se haya editado el archivo, hacer `git commit -a`.
-
-
+___
 6. **Enviar los cambios de un repositorio local a uno remoto.**
 
 Cuando tienes un proyecto que quieres compartir, debes enviarlo a un servidor. El comando para hacerlo es simple: `git push [nombre-remoto] [nombre-rama]`. Si quieres enviar tu rama `master` a tu servidor `origin` (recuerda, clonar un repositorio establece esos nombres automáticamente), entonces puedes ejecutar el siguiente comando y se enviarán todos los *commits* que hayas hecho al servidor: `$ git push origin master`
 
 Este comando solo funciona si clonaste de un servidor sobre el que tienes permisos de escritura y si nadie más ha enviado datos por el medio. Si alguien más clona el mismo repositorio que tú y envía información antes que tú, tu envío será rechazado. Tendrás que traerte su trabajo y combinarlo con el tuyo antes de que puedas enviar datos al servidor.
-
-
+___
 7. **Enviar una rama local al repositorio remoto.**
 
 Cuando quieres compartir una rama con el resto del mundo, debes llevarla (push) a un remoto donde tengas permisos de escritura. Tus ramas locales no se sincronizan automáticamente con los remotos en los que escribes, sino que tienes que enviar (push) expresamente las ramas que desees compartir.
@@ -151,8 +143,7 @@ $ git checkout -b serverfix origin/serverfix
 Branch serverfix set up to track remote branch serverfix from origin.
 Switched to a new branch 'serverfix'
 ```
-
-
+___
 8. **Incorporar a ramas locales cambios que se producen en el repositorio remoto.**
 
 La forma más sencilla de actualizar nuestro repositorio local con los posibles cambios que se hayan podido producir en el repositorio remoto es mediante el comando `git pull`. Si existen cambios éstos se descargarán y se fusionarán con nuestros cambios locales automáticamente, aunque pueden ocurrir errores:
@@ -166,9 +157,7 @@ Este error ocurre porque una rama local de nuestro repositorio no tiene asignada
 Usando el comando `git log` podremos ver los cambios que se han efectuado.
 
 Realmente, al hacer `git pull` los cambios se descargan y fusionan automáticamente. Si lo que buscamos es realizar los cambios de manera manual, tendremos que utilizar la combinación de `git fetch` y `git merge` . Al hacer el *fetch*, los cambios se quedarán en una nueva rama llamada origin/master. Para aplicar dichos cambios tendremos que utilizar `git merge origin/master`.
-
-  
-
+___
 9. **Realizar un pull request entre dos ramas de un repositorio remoto.**
 
 Un *pull request* es una petición que hace el desarrollador de una rama para que sus cambios se fundan con la rama principal. No es una operación *git* propiamente dicha, sino un servicio que ofrecen los servidores (GitLab o GitHub).
