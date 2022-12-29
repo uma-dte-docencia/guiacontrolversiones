@@ -18,7 +18,7 @@ Si queremos deshabilitar el uso del proxy usamos:
 
 `git config --global --unset http.proxy`
  
- 
+___
  
 2. **Replicar un repositorio remoto localmente en nuestra máquina.**
 
