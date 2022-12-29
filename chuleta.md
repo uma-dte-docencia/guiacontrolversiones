@@ -95,7 +95,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 El archivo se mostrará tal que así:
 
-![Untitled](Git%20d2395b8688ee4f0180604699e79ff39b/Untitled.webp)
+![imagen](https://user-images.githubusercontent.com/100855055/209958724-c094db6a-f28f-4a11-b143-7cc3f3240dad.png)
 
 La forma más directa de resolver un conflicto es editar el archivo generado: hay que abrir el archivo afectado y eliminar manualmente todos los divisores de conflicto (en el ejemplo, elegir el código que nos interese que esté entre `<<<<<<< HEAD` y `=======` o `======` y `>>>>>>> contenido`)**.** Una vez que se haya editado el archivo, hacer `git commit -a`.
 ___
