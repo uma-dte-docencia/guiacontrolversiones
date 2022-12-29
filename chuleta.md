@@ -19,6 +19,8 @@ Si queremos deshabilitar el uso del proxy usamos:
 `git config --global --unset http.proxy`
 
 
+
+
 2. **Replicar un repositorio remoto localmente en nuestra máquina.**
 
 Para obtener una copia de un repositorio Git existente el comando que se necesita es `git clone [url]` . Por ejemplo, si quieres clonar la librería de Git llamada libgit2 puedes hacer algo así: `$ git clone https://github.com/libgit2/libgit2` .
