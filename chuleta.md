@@ -148,11 +148,11 @@ ___
 
 La forma más sencilla de actualizar nuestro repositorio local con los posibles cambios que se hayan podido producir en el repositorio remoto es mediante el comando `git pull`. Si existen cambios éstos se descargarán y se fusionarán con nuestros cambios locales automáticamente, aunque pueden ocurrir errores:
 
-![Untitled](Git%20d2395b8688ee4f0180604699e79ff39b/Untitled.png)
+![imagen](https://user-images.githubusercontent.com/100855055/209958838-105f9a12-e6a1-45af-8f9f-ddb9ded34dd4.png)
 
 Este error ocurre porque una rama local de nuestro repositorio no tiene asignada una rama del repositorio remoto. Podremos especificar a qué rama remota corresponde la rama local con el comando `git branch --set-upstream-to=origin/master master` . Si no hay errores, deberíamos obtener una pantalla similar a ésta: 
 
-![Untitled](Git%20d2395b8688ee4f0180604699e79ff39b/Untitled%201.png)
+![imagen](https://user-images.githubusercontent.com/100855055/209958866-c50469bf-d0c9-46cf-b8ae-eec7f274b378.png)
 
 Usando el comando `git log` podremos ver los cambios que se han efectuado.
 
@@ -173,7 +173,6 @@ $ git push -u origin index-page
 En el ejemplo, hemos utilizado la rama ‘*index-page*’ para hacer el *push* en vez del master. Esto lo hacemos así para hacer un *pull request* más estructurado.
 
 Ahora al ir a la página del repositorio en GitHub, en el menú de ramas ‘*Branch:*’ aparecerá la nueva rama ‘*index-page*’:
-
-![Untitled](Git%20d2395b8688ee4f0180604699e79ff39b/Untitled%202.png)
+![imagen](https://user-images.githubusercontent.com/100855055/209958903-48c59595-76f4-4e8f-9b5c-facc3c0f2fbd.png)
 
 Al clicar la rama podremos darle al botón ‘*Compare & pull-request*’, el cual permite hacer el *pull* a la rama inicial. Podemos hacer una descripción de qué vamos a subir y, cuando terminemos, pulsamos en ‘*Create pull request*’. Ya solo falta que el master apruebe el *pull request*.
