@@ -1,3 +1,39 @@
+
+### Chuleta de control de versiones con git
+
+TÍTULO: 'El intérprete de comandos de git-bash' 
+
+Mostrar en qué directorio estamos
+
+-Para saber en qué directorio nos encontramos hay que ejecutar el comando "pwd".
+
+Crear un directorio
+
+-Usando el comando "mkdir (nombre del directorio)" podemos crear un directorio con el nombre que deseemos.
+
+Cambiar de directorio
+
+-Para cambiar de directorio utilizaremos el comando "cd (nombre o ruta del directorio)". Si queremos volver al directorio anterior,
+hay que utilizar el comando "cd .."
+
+Mostrar la lista de ficheros de un directorio
+
+-Si queremos ver los archivos que se encuentran en un directorio, lo podemos hacer con "ls" y "ls -all" para ver incluso los archivos ocultos.
+
+Borrar un fichero
+
+-Para borrar un fichero se usa el comando "rm (nombre del fichero)". Si queremos borrar un directorio usaremos "rm -d (nombre directorio)".
+
+Cambiar (mover) un fichero de directorio
+
+-Usando el comando "mv (nombre del archivo) (nombre o ruta del directorio)" podemos mover cualquier fichero de directorio
+
+
+TÍTULO: Control de versiones distribuido
+
+Realizar un pull request entre dos repositorios que resultaron de un Fork
+
+-Cuando obtengamos los repositorios generados con el Fork, es necesario para esto que hayamos hecho cambios en las ramas: vamos a github, entramos en el repositorio->code->branch->pull request
 ### En control de versiones centralizado
 
 1. **Configurar git para que trabaje tras un proxy**
@@ -176,3 +212,4 @@ Ahora al ir a la página del repositorio en GitHub, en el menú de ramas ‘*Bra
 ![imagen](https://user-images.githubusercontent.com/100855055/209958903-48c59595-76f4-4e8f-9b5c-facc3c0f2fbd.png)
 
 Al clicar la rama podremos darle al botón ‘*Compare & pull-request*’, el cual permite hacer el *pull* a la rama inicial. Podemos hacer una descripción de qué vamos a subir y, cuando terminemos, pulsamos en ‘*Create pull request*’. Ya solo falta que el master apruebe el *pull request*.
+
