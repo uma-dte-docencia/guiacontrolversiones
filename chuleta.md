@@ -18,7 +18,8 @@ Si queremos deshabilitar el uso del proxy usamos:
 
 `git config --global --unset http.proxy`
 
-1. **Replicar un repositorio remoto localmente en nuestra máquina.**
+
+2. **Replicar un repositorio remoto localmente en nuestra máquina.**
 
 Para obtener una copia de un repositorio Git existente el comando que se necesita es `git clone [url]` . Por ejemplo, si quieres clonar la librería de Git llamada libgit2 puedes hacer algo así: `$ git clone https://github.com/libgit2/libgit2` .
 
@@ -56,55 +57,9 @@ From https://github.com/paulboone/ticgit
 
 La rama maestra de Paul ahora es accesible localmente con el nombre `pb/master` - puedes combinarla con alguna de tus ramas, o puedes crear una rama local en ese punto si quieres inspeccionarla.
 
-- Alternativa:
-    
-    ### Añadir Repositorios Remotos
-    
-    En secciones anteriores hemos mencionado y dado alguna demostración de cómo añadir repositorios remotos. Ahora veremos explícitamente cómo hacerlo. Para añadir un remoto nuevo y asociarlo a un nombre que puedas referenciar fácilmente, ejecuta `git remote add [nombre] [url]`:
-    
-    ```jsx
-    $ git remote
-    origin
-    $ git remote add pb https://github.com/paulboone/ticgit
-    $ git remote -v
-    origin	https://github.com/schacon/ticgit (fetch)
-    origin	https://github.com/schacon/ticgit (push)
-    pb	    https://github.com/paulboone/ticgit (fetch)
-    pb	    https://github.com/paulboone/ticgit (push)
-    ```
-    
-    A partir de ahora puedes usar el nombre `pb` en la línea de comandos en lugar de la URL entera. Por ejemplo, si quieres traer toda la información que tiene Paul pero tú aún no tienes en tu repositorio, puedes ejecutar `git fetch pb`:
-    
-    ```jsx
-    $ git fetch pb
-    remote: Counting objects: 43, done.
-    remote: Compressing objects: 100% (36/36), done.
-    remote: Total 43 (delta 10), reused 31 (delta 5)
-    Unpacking objects: 100% (43/43), done.
-    From https://github.com/paulboone/ticgit
-     * [new branch]      master     -> pb/master
-     * [new branch]      ticgit     -> pb/ticgit
-    ```
-    
-    La rama maestra de Paul ahora es accesible localmente con el nombre `pb/master` - puedes combinarla con alguna de tus ramas, o puedes crear una rama local en ese punto si quieres inspeccionarla.
-    
-- Alternativa 2:
-    
-    **Si se desea obtener una copia de un repositorio Git existente el comando que necesitas es `git clone`.**
-    
-    El comando 'git clone` es en realidad una especie de envoltura alrededor  de varios otros comandos. Éste crea un nuevo directorio, entra en él y ejecuta `git init` para que sea un repositorio vacío de Git, añade uno remoto (`git remote add`) hacia la dirección URL que se le pasa (por defecto llamado `origin`), ejecuta un `git fetch` de ese repositorio remoto y después activa el último commit en el directorio de trabajo con `git checkout`.
-    *Si estás familiarizado con otros sistemas de control de versiones como Subversion, verás que el comando es "clone" en vez de "checkout".  Es una distinción importante, ya que Git recibe una copia de casi todos los datos que tiene el servidor: cada versión de cada archivo de la historia del proyecto es descargada por defecto cuando ejecutas `git clone`. De hecho, si el disco de tu servidor se corrompe, puedes usar cualquiera  de los clones en cualquiera de los clientes para devolver el servidor al estado en el que estaba cuando fue clonado (puede que pierdas algunos  hooks del lado del servidor y otros, pero toda la información acerca de las versiones estará ahí).*
-    
-    **Puedes clonar un repositorio con `git clone [url]`**. Por ejemplo, si quieres clonar la librería de Git llamada libgit2 puedes hacer algo así: `$ git clone https://github.com/libgit2/libgit2`
-    
-    Esto crea un directorio llamado `libgit2`, inicializa un directorio `.git` en su interior, descarga toda la información de ese repositorio y saca una copia de trabajo de la última versión. Si te metes en el directorio `libgit2`, verás que están los archivos del proyecto listos para ser utilizados. **Si quieres clonar el repositorio a un directorio con otro nombre que no sea `libgit2`, puedes especificarlo con la siguiente opción de línea de comandos**: `$ git clone https://github.com/libgit2/libgit2 mylibgit`
-    
-    Ese comando hace lo mismo que el anterior, pero el directorio de destino se llamará `mylibgit`.
-    
-    Git te permite usar distintos protocolos de transferencia. El ejemplo anterior usa el protocolo `https://`, pero también puedes utilizar `git://` o `suario@servidor:ruta/del/repositorio.git` que utiliza el protocolo de transferencia SSH.
-    
 
-1. **Replicar un repositorio local en un servidor remoto.**
+
+3. **Replicar un repositorio local en un servidor remoto.**
 
 Cuando tienes un proyecto que quieres compartir, debes enviarlo a un servidor. El comando para hacerlo es simple: `git push [nombre-remoto] [nombre-rama]`. Si quieres enviar tu rama `master` a tu servidor `origin`
  (clonar un repositorio establece esos nombres automáticamente), entonces puedes ejecutar el siguiente comando y se 
@@ -114,7 +69,8 @@ enviarán todos los *commits* que hayas hecho al servidor:
 
 Este comando solo funciona si clonaste de un servidor sobre el que  tienes permisos de escritura y si nadie más ha enviado datos por el  medio. Si alguien más clona el mismo repositorio que tú y envía información antes que tú, tu envío será rechazado. Tendrás que traerte su trabajo y combinarlo con el tuyo antes de que puedas enviar datos al servidor.
 
-1. **Traer los cambios de un repositorio remoto a un repositorio local.**
+
+4. **Traer los cambios de un repositorio remoto a un repositorio local.**
 
 Para obtener datos de tus proyectos remotos puedes ejecutar: `$ git fetch [remote-name]`
 
@@ -126,7 +82,8 @@ Es importante destacar que el comando `git fetch` solo trae datos a tu repositor
 
 Si has configurado una rama para que rastree una rama remota, puedes usar el comando `git pull` para traer y combinar automáticamente la rama remota con tu rama actual. Por defecto, el comando `git clone` le indica automáticamente a tu rama maestra local que rastree la rama maestra remota (o como se llame la rama por defecto) del servidor del que has clonado. Generalmente, al ejecutar `git pull` traerás datos del servidor del que clonaste originalmente y se intentará combinar automáticamente la información con el código en el que estás trabajando: es básicamente una combinación de los comandos `git fetch` y `git merge`, donde Git descargará desde el repositorio remoto especificado y, a continuación, de forma inmediata intentará combinarlo en la rama en la que te encuentres.
 
-1. **Resolver los conflictos que se puedan producir al traerse estos cambios**.
+
+5. **Resolver los conflictos que se puedan producir al traerse estos cambios**.
 
 Es común que los sistemas de control de versiones gestionen las contribuciones de varios autores. A veces, varios desarrolladores pueden intentar editar el mismo contenido: si el desarrollador A intenta editar el código que el desarrollador B está editando, puede producir un conflicto**.** Para disminuir la aparición de conflictos, los desarrolladores deben trabajar en ramas separadas y aisladas. ****El comando `git merge` tiene como responsabilidad principal combinar ramas separadas y resolver cualquier edición en conflicto.
 
@@ -147,13 +104,15 @@ El archivo se mostrará tal que así:
 
 La forma más directa de resolver un conflicto es editar el archivo generado: hay que abrir el archivo afectado y eliminar manualmente todos los divisores de conflicto (en el ejemplo, elegir el código que nos interese que esté entre `<<<<<<< HEAD` y `=======` o `======` y `>>>>>>> contenido`)**.** Una vez que se haya editado el archivo, hacer `git commit -a`.
 
-1. **Enviar los cambios de un repositorio local a uno remoto.**
+
+6. **Enviar los cambios de un repositorio local a uno remoto.**
 
 Cuando tienes un proyecto que quieres compartir, debes enviarlo a un servidor. El comando para hacerlo es simple: `git push [nombre-remoto] [nombre-rama]`. Si quieres enviar tu rama `master` a tu servidor `origin` (recuerda, clonar un repositorio establece esos nombres automáticamente), entonces puedes ejecutar el siguiente comando y se enviarán todos los *commits* que hayas hecho al servidor: `$ git push origin master`
 
 Este comando solo funciona si clonaste de un servidor sobre el que tienes permisos de escritura y si nadie más ha enviado datos por el medio. Si alguien más clona el mismo repositorio que tú y envía información antes que tú, tu envío será rechazado. Tendrás que traerte su trabajo y combinarlo con el tuyo antes de que puedas enviar datos al servidor.
 
-1. **Enviar una rama local al repositorio remoto.**
+
+7. **Enviar una rama local al repositorio remoto.**
 
 Cuando quieres compartir una rama con el resto del mundo, debes llevarla (push) a un remoto donde tengas permisos de escritura. Tus ramas locales no se sincronizan automáticamente con los remotos en los que escribes, sino que tienes que enviar (push) expresamente las ramas que desees compartir.
 
@@ -192,7 +151,8 @@ Branch serverfix set up to track remote branch serverfix from origin.
 Switched to a new branch 'serverfix'
 ```
 
-1. **Incorporar a ramas locales cambios que se producen en el repositorio remoto.**
+
+8. **Incorporar a ramas locales cambios que se producen en el repositorio remoto.**
 
 La forma más sencilla de actualizar nuestro repositorio local con los posibles cambios que se hayan podido producir en el repositorio remoto es mediante el comando `git pull`. Si existen cambios éstos se descargarán y se fusionarán con nuestros cambios locales automáticamente, aunque pueden ocurrir errores:
 
@@ -208,7 +168,7 @@ Realmente, al hacer `git pull` los cambios se descargan y fusionan automáticame
 
   
 
-1. **Realizar un pull request entre dos ramas de un repositorio remoto.**
+9. **Realizar un pull request entre dos ramas de un repositorio remoto.**
 
 Un *pull request* es una petición que hace el desarrollador de una rama para que sus cambios se fundan con la rama principal. No es una operación *git* propiamente dicha, sino un servicio que ofrecen los servidores (GitLab o GitHub).
 
