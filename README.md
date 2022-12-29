@@ -34,23 +34,6 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 
 ### En control de versiones centralizado
 * Configurar git para que trabaje tras un proxy
-Puede que en algún momento queramos configurar git para que funcione a través de un proxy. Para utilizaremos las siguientes instrucciones:
-- Para protocolo *http*:
-~~~
-git config --global http.proxy http://<nombre de usuario>:<password>@<direccion_ip>:<puerto>
-~~~
-- Para protocolo *https*:
-~~~
-git config --global https.proxy http://<nombre de usuario>:<password>@<direccion_ip>:<puerto>
-~~~
-Siendo 'nombre de usuario' el nombre de usuario para autentificarse en el servidor proxy, 'password' la contraseña para identificarse en el servidor proxy, 'direccion_ip' la dirección del servidor de rpoxy y 'puerto' en el que está escuchando el proxy.
-
-Si queremos deshabilitar el uso del proxy usamos:
-~~~
-git config --global --unset http.proxy
-~~~
-
-
 * Replicar un repositorio remoto localmente en nuestra máquina.
 * Repolicar un repositorio local en un servidor remoto.  
 * Traer los cambios de un repositorio remoto a un repositorio local. 
