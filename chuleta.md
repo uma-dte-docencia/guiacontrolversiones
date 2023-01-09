@@ -93,7 +93,8 @@ TÍTULO: Control de versiones distribuido
 Realizar un pull request entre dos repositorios que resultaron de un Fork
 
 -Cuando obtengamos los repositorios generados con el Fork, es necesario para esto que hayamos hecho cambios en las ramas: vamos a github, entramos en el repositorio->code->branch->pull request
-__
+
+___
 
 # Control de versiones local 
 
@@ -109,10 +110,12 @@ __
 * La clonación crea automáticamente una conexión remota llamada **"origin"** que apunta al repositorio original. 
 
 
+
 ## Preparar ficheros para ser confirmados en un repositorio local. 
 
 `git add`
 * Añade los cambios del directorio de trabajo actual al área de preparación del repositorio (*stage*). este comando debe aplicarse **cada vez que se modifica un archivo**. Para preparar los cambios en un fichero o en un directorio se usan `git add <fichero>` o `git add <directorio>` respectivamente. `git add --all` añade todos los archivos con cambios y sin seguimiento al repositorio y actualiza el árbol de trabajo.
+
 
 
 ## Confirmar cambios en un repositorio local. 
@@ -121,11 +124,13 @@ __
 * Confirma los cambios añadidos al *stage* en el repositorio local, es decir, confirma los cambios preparados del directorio del entorno de ensayo en el historial de confirmaciones de los repositorios. `git commit -m <"Mensaje del commit">`.
 
 
+
 ## Deshacer la operación de preparar. 
 
 `git reset`
 * Deshace la acción del comando `git add`, es decir permite deshacer los cambios antes de ser confirmados en un *commit*. `git reset` **restablece el entorno de ensayo (*stage*)** para que refleje la confirmación más reciente, **el directorio de trabajo se mantiene intacto**, `git reset --hard` borra todos los cambios locales no confirmados, **restablece el *stage* y el directorio de trabajo**.
 * Mueve el puntero de referencia *HEAD* y el puntero de referencia de la *rama actual*.
+
 
 
 ## Deshacer la operación de confirmar.
@@ -139,16 +144,19 @@ __
 * Al no cambiar el historial del proyecto es una operación segura para el control de versiones.
 
 
+
 ## Identificar el estado de un fichero o ficheros en un repositorio local.
 
 `git status`
 * Muestra el estado del directorio de trabajo y del *stage*. Permite ver los cambios que se han preparado, los que no y los archivos en los que Git no va a realizar uns eguimiento.
 
 
+
 ## Descartar los cambios de un fichero de trabajo mediante la recuperación de una versión almacendada en el repositorio local.
 
 `git reset`
 * Deshace las confirmaciones. Para restablecer el historial a un determinado *commit* se usa `git reset --hard <Identificador_commit>`, para ver el identificador se hace uso de `git log --oneline`, para salir de la lista de confirmaciones `q`.
+
 
 
 ## Crear una rama en un repositorio local.
@@ -161,12 +169,14 @@ __
 * Para crear una nueva rama y conmutar al entorno de trabajo de esa nueva rama se puede usar `git checkout -b <nueva_rama>`, esta nueva rama estará basada en el **HEAD** actual (rama actual o instancia actual), si se quiere crear una rama basada en *otra rama* distinta al HEAD se debe usar `git checkout -b <nueva_rama> <rama_existente>`. 
 
 
+
 ## Cambiar de rama en la copia local.
 
 `git checkout`
 * Permite el desplazamiento entre las ramas creadas por `git branch`. **Cambia entre versiones de código que ya se ecnuentran en el sistema local**. `git checkout <rama_existente>` cambia el entorno de trabajo a la rama_existente.
 
-__
+___
+
 ### En control de versiones centralizado
 
 1. **Configurar git para que trabaje tras un proxy**
