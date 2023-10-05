@@ -6,7 +6,7 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 * Definir brevemente en qué consiste el control de versiones. 
 * Explicar los siguientes conceptos: repositorio local, copia local, *index* o *stage*, repositorio remoto, *log*, conflicto.
 * Explicar los siguientes estados de un fichero: sin seguimiento, confirmado, modificado, preparado, ignorado. 
-* Explicar las siguientes operaciones: Clone, Add, Commit, Push, Pull, Fork y Pull Request. 
+* Explicar las siguientes operaciones: Clone, Add, Commit, Merge, Rebase, Push, Pull, Fork y Pull Request. 
 * Traducir entre inglés y español la terminología de los tres puntos anteriores. 
 * Nombrar al menos dos servicios de repositorio remoto para el control de versiones (ver transparencias).  
 
