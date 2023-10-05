@@ -1,5 +1,8 @@
-# Guia de Estudio para el Control de Versiones. 
+# TAREA DE CONTROL DE VERSIONES
 
+Realiza un fork de este repositorio en GitHub que compartireis según los grupos de clase. Utilizando el contenido de esta guía, puedes rellenar el otro fichero en este repositorio, [chuleta.md](https://github.com/uma-dte-docencia/guiacontrolversiones/blob/master/chuleta.md). Ese es el fichero que puedes solicitar a los profesores que te impriman y te entreguen en el examen. Cada miembro del grupo recibirá una copia.   
+
+# GUÍA DE ESTUDIO
 Guia de Estudio de la parte de Gestión de la Documentación - Control de Versiones. Indica qué tenemos que saber y saber hacer en la asignatura de Proyectos de Sistemas Electrónicos. 
 
 ## Conceptos mínimos que tenemos que saber sobre el control de versiones
