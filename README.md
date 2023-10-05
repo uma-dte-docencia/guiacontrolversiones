@@ -23,8 +23,8 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 * Borrar un fichero. 
 * Cambiar (mover) un fichero de directorio. 
 
-### En control de versiones local 
-* Crear un repositorio local en nuestra máquina.
+### En local 
+* Crear un repositorio local en nuestra máquina desde cero (sin que haga falta uno remoto).
 * Ignorar ficheros.
 * Preparar ficheros para ser confirmados en un repositorio local.
 * Confirmar cambios en un repositorio local. 
@@ -37,7 +37,7 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 * Fundir los cambios de una rama en otra.
 * Injertar una rama en otra. 
 
-### En control de versiones centralizado y en el distribuido
+### En remoto (con GitHub)
 * Configurar git para que trabaje tras un proxy
 * Replicar un repositorio remoto localmente en nuestra máquina.
 * Replicar un repositorio local en un servidor remoto.  
@@ -46,9 +46,7 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 * Enviar los cambios de un repositorio local a uno remoto.  
 * Enviar una rama local al repositorio remoto de manera que la local quede enganchada (haga *tracking* de) la remota. 
 * Incorporar a ramas locales cambios que se producen en el repositorio remoto.
-
-### En GitHub
-* Crear un repositorio vacío.
+* Crear un repositorio remoto vacío.
 * Invitar a colaboradores. 
 * Realizar un pull request entre dos ramas de un repositorio remoto. 
 * Realizar un pull request entre dos repositorios que resultaron de un Fork.  
