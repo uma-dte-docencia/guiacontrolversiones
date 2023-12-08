@@ -95,7 +95,7 @@ Operacion                                 | Descripción
 **pull request** (entre ramas)            | En la página principal del repositorio: "New pull request" y se selecciona la rama deseada
 **pull request** (entre repositorios)     | Dentro de la misma opción anterior, seleccionando: "compare across forks"
 
-## 3. Uso del formato .md
+## 3. Uso del formato .md (A partir de aquí son cosas útiles que no entran en la guía de estudio de la asignatura, pero que ayudan a escribir este tipo de documento)
 
 ### 3.1 Definición
 
