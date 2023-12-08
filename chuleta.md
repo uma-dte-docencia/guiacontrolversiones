@@ -10,10 +10,11 @@
     * **Copia local**: Es la copia que hacen los usuarios de un fichero sometido a control de versiones. El **DIRECTORIO LOCAL (working directory/working tree/workspace)** es el que contiene todas las copias locales. 
 
     * **Repositorio remoto**: Es una base de datos centralizada donde se guardan las distintas versiones de los ficheros sometidos a control de versiones, y reside en el servidor centralizado. 
+* **Index o Stage (zona de preparación)**: contiene todos los ficheros preparados.	
 
-    * ***Log***:  Registro de todos los cambios que se han producido en el repositorio. Es responsabilidad del cliente añadir información al log cuando se produce un cambio. También llamado histórico.
-
-    * **Conflicto**: Problema que surge cuando los clientes realizan cambios incompatibles entre sí.
+***FICHERO PREPARADO (staged file)***: Es la copia del fichero modificado preparada para ser confirmada en la próxima operación de confirmación (COMMIT).
+* ***Log***:  Registro de todos los cambios que se han producido en el repositorio. Es responsabilidad del cliente añadir información al log cuando se produce un cambio. También llamado histórico.
+* **Conflicto**: Problema que surge cuando los clientes realizan cambios incompatibles entre sí.
     
 * **Operaciones**:
     * **Clone**: Realiza una copia de un repositorio remoto en un directorio local.
@@ -21,7 +22,10 @@
     * **Add**: Añade un archivo al siguiente commit.
     
     * **Commit**: Confirma los cambios en el repositorio local.
+    * **Merge (fusionar)**: Traslada los cambios de una rama a otra.
     
+    * **Rebase (reorganización/trasplantar) **: Trasplanta sobre un tronco que ha crecido después de crear la rama.
+
     * **Push**: Envía al repositorio remoto los cambios correspondientes a los commits realizados desde el último push.
     
     * **Pull**: Descarga desde el repositorio remoto los archivos actualizados en commits que hayan realizado otros usuarios, y los integra (realiza un merge) con el repositorio local.
