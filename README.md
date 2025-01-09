@@ -1,12 +1,3 @@
-# TAREA DE CONTROL DE VERSIONES
-
-Realizad un fork de este repositorio en GitHub por cada grupo de clase. Utilizando el contenido de esta guía, puedes rellenar el otro fichero en este repositorio, [chuleta.md](https://github.com/uma-dte-docencia/guiacontrolversiones/blob/master/chuleta.md). Ese es el fichero que puedes solicitar a los profesores que te impriman y te entreguen en el examen. Cada miembro del grupo recibirá una copia. 
-
-Para trabajar dentro de los grupos, os recomendamos realizar la siguiente secuencia que os servirá para practicar: Replicad vuestro fork localmente (p.ej. git clone https://github.com//losdelfondo/guiacontroldeversiones.git).
-Cread una rama local cuando queráis contribuir a la chuleta y haced los cambios que queráis localmente (git add, git commit -m, etc).
-Subid los cambios a github. Id a GitHub y haced el *pull request* allí. Observad la pinta que tiene el *pull request* y haced el *merge*.
-Limpiad las ramas locales y remotas que ya no necesitéis. Todo este proceso se puede realizar también directamente en Github, pero aprenderéis menos :)
-
 # GUÍA DE ESTUDIO
 Guia de Estudio de la parte de Gestión de la Documentación - Control de Versiones. Indica qué tenemos que saber y saber hacer en la asignatura de Proyectos de Sistemas Electrónicos. 
 
