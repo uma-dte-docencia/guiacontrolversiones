@@ -34,7 +34,6 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 * Injertar una rama en otra. 
 
 ### En remoto (con GitHub)
-* Configurar git para que trabaje tras un proxy
 * Replicar un repositorio remoto localmente en nuestra máquina.
 * Replicar un repositorio local en un servidor remoto.  
 * Traer los cambios de un repositorio remoto a un repositorio local. 
