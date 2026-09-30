@@ -9,15 +9,7 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 * Traducir entre inglés y español la terminología de los tres puntos anteriores. 
 * Nombrar al menos dos servicios de repositorio remoto para el control de versiones (ver transparencias).  
 
-## Qué tenemos que saber hacer con Git (y GitHub)
-
-### En el intérprete de comandos de git-bash
-* Mostrar en qué directorio estamos.
-* Crear un directorio.
-* Cambiar de directorio.
-* Mostrar la lista de ficheros de un directorio. 
-* Borrar un fichero. 
-* Cambiar (mover) un fichero de directorio. 
+## Qué tenemos que saber explicar cómo se hace con Git (y GitHub)
 
 ### En local 
 * Crear un repositorio local en nuestra máquina desde cero (sin que haga falta uno remoto).
@@ -42,6 +34,4 @@ Guia de Estudio de la parte de Gestión de la Documentación - Control de Versio
 * Enviar una rama local al repositorio remoto de manera que la local quede enganchada (haga *tracking* de) la remota. 
 * Incorporar a ramas locales cambios que se producen en el repositorio remoto.
 * Crear un repositorio remoto vacío.
-* Invitar a colaboradores. 
-* Realizar un pull request entre dos ramas de un repositorio remoto. 
-* Realizar un pull request entre dos repositorios que resultaron de un Fork.  
+  
